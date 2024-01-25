@@ -14,14 +14,14 @@ body {
 	background-color: #333;
 }
 
-.box {
+.menu {
 	padding: 80px 140px;
 	border-radius: 15px;
 	background-color: #222;
 	box-shadow: 0 0 15px rgba(0, 140, 255, 0.6);
 }
 
-.link {
+.menu .link {
 	position: relative;
 	padding: 10px 20px;
 	font-size: 48px;
@@ -29,13 +29,13 @@ body {
 	text-decoration: none;
 }
 
-.link,
-.link::after,
-.link::before {
+.menu .link,
+.menu .link::after,
+.menu .link::before {
 	transition: 0.3s;
 }
 
-.one::after {
+.menu .one::after {
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -48,51 +48,51 @@ body {
 	transition: transform 0.3s;
 }
 
-.one:hover::after {
+.menu .one:hover::after {
 	transform: scaleX(1);
 	transform-origin: left;
 }
 
-.two::before,
-.two::after {
+.menu .two::before,
+.menu .two::after {
 	content: '';
 	position: absolute;
 	width: 0;
 	height: 0;
 }
 
-.two::before {
+.menu .two::before {
 	top: -2px;
 	left: -8px;
 	border-top: 0 solid #fff;
 	border-left: 0 solid #fff;
 }
 
-.two::after {
+.menu .two::after {
 	bottom: -2px;
 	right: -8px;
 	border-bottom: 0 solid #fff;
 	border-right: 0 solid #fff;
 }
 
-.two:hover::before,
-.two:hover::after {
+.menu .two:hover::before,
+.menu .two:hover::after {
 	width: 50px;
 	height: 50%;
 }
 
-.two:hover::before {
+.menu .two:hover::before {
 	border-top: 3px solid #fff;
 	border-left: 3px solid #fff;
 }
 
-.two:hover::after {
+.menu .two:hover::after {
 	border-bottom: 3px solid #fff;
 	border-right: 3px solid #fff;
 }
 
-.three::before,
-.three::after {
+.menu .three::before,
+.menu .three::after {
 	content: '';
 	position: absolute;
 	width: 0;
@@ -100,24 +100,24 @@ body {
 	border-bottom: 2px solid rgb(255, 255, 255);
 }
 
-.three::before {
+.menu .three::before {
 	right: 50%;
 }
 
-.three::after {
+.menu .three::after {
 	left: 50%;
 }
 
-.three:hover::before,
-.three:hover::after {
+.menu .three:hover::before,
+.menu .three:hover::after {
 	width: 50%;
 }
 
-.four {
+.menu .four {
 	z-index: 0;
 }
 
-.four::after {
+.menu .four::after {
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -128,24 +128,24 @@ body {
 	z-index: -1;
 }
 
-.four:hover {
+.menu .four:hover {
 	color: #000000;
 }
 
-.four:hover::after {
+.menu .four:hover::after {
 	height: 100%;
 }
 
-.five {
+.menu .five {
 	z-index: 0;
 }
 
-.five:hover {
+.menu .five:hover {
 	animation: blink 0.5s;
 }
 
-.five::before,
-.five::after {
+.menu .five::before,
+.menu .five::after {
 	content: '';
 	position: absolute;
 	top: 0;
@@ -155,16 +155,16 @@ body {
 	z-index: -1;
 }
 
-.five::before {
+.menu .five::before {
 	left: 0;
 }
 
-.five::after {
+.menu .five::after {
 	right: 0;
 }
 
-.five:hover::before,
-.five:hover::after {
+.menu .five:hover::before,
+.menu .five:hover::after {
 	animation: background 0.5s 0.4s forwards;
 }
 
