@@ -226,6 +226,11 @@ body {
 	font-size: 36px;
 	text-shadow: 2px 2px 5px rgb(0, 0, 0);
 	cursor: crosshair;
+	z-index: 10;
+}
+
+.cards button:hover ~ .text {
+	clip-path: circle(120% at 50% 90%);
 }
 
 .cards .text {
@@ -240,6 +245,8 @@ body {
 	padding: 80px 30px;
 	background-color: rgba(0, 0, 0, 0.85);
 	color: #fff;
+	clip-path: circle(0% at 50% 90%);
+	transition: clip-path 0.8s;
 }
 
 h1 {
