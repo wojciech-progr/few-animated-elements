@@ -198,11 +198,13 @@ body {
 	position: relative;
 	margin: 10px;
 	height: 800px;
+	width: 50%;
 	text-align: center;
 	background-position: center;
 	background-size: cover;
 	border-radius: 15px;
 	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+	overflow: hidden;
 }
 
 .cards .one {
@@ -230,4 +232,21 @@ body {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	padding: 80px 30px;
+	background-color: rgba(0, 0, 0, 0.85);
+	color: #fff;
+}
+
+h1 {
+	color: rgb(182, 179, 97);
+}
+
+h2 {
+	margin-bottom: 30px;
+	color: rgb(141, 138, 138);
 }
