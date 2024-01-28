@@ -194,7 +194,7 @@ body {
 	margin-top: 50px;
 }
 
-.card {
+.cards .card {
 	position: relative;
 	margin: 10px;
 	height: 800px;
@@ -249,11 +249,11 @@ body {
 	transition: clip-path 0.8s;
 }
 
-h1 {
+.cards h1 {
 	color: rgb(182, 179, 97);
 }
 
-h2 {
+.cards h2 {
 	margin-bottom: 30px;
 	color: rgb(141, 138, 138);
 }
