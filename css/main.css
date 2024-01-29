@@ -191,15 +191,16 @@ body {
 
 .cards {
 	display: flex;
-	width: 1000px;
+	flex-wrap: wrap;
 	margin-top: 50px;
+	justify-content: center;
 }
 
 .cards .card {
 	position: relative;
 	margin: 10px;
 	height: 800px;
-	width: 50%;
+	width: 500px;
 	text-align: center;
 	background-position: center;
 	background-size: cover;
@@ -261,16 +262,16 @@ body {
 
 .cards-2 {
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 	align-items: center;
 	background-color: #333;
 	overflow: hidden;
-	height: 1000px;
 }
 
 .cards-2 .card {
 	position: relative;
-	margin: 20px 80px;
+	margin: 120px 80px;
 	width: 450px;
 	height: 700px;
 	perspective: 800px;
