@@ -274,6 +274,7 @@ body {
 	margin: 20px 80px;
 	width: 450px;
 	height: 700px;
+	perspective: 800px;
 }
 
 .cards-2 .img {
@@ -286,5 +287,55 @@ body {
 }
 
 .cards-2 .one {
+	background-image: url('../img/forest-1.jpg');
+}
+
+.cards-2 .two {
 	background-image: url('../img/forest-2.jpg');
+}
+
+.cards-2 .three {
+	background-image: url('../img/forest-3.jpg');
+}
+
+.cards-2 .text {
+	position: absolute;
+	top: 0;
+	padding: 0;
+	left: 0;
+	right: 0;
+	padding: 30px;
+	border-radius: 15px;
+	background-image: linear-gradient(315deg, #fee2f8 0%, #dcf8ef 74%);
+	text-align: center;
+	transition: 0.8s;
+	opacity: 0;
+}
+
+.cards-2 h3 {
+	margin-top: 600px;
+	margin-bottom: 20px;
+}
+
+.cards-2 .text-one {
+	transform: rotateX(-180deg);
+}
+
+.cards-2 .text-two {
+	transform: rotateY(-180deg);
+}
+
+.cards-2 .card:hover .text {
+	transform: rotate(0);
+	opacity: 1;
+}
+
+.cards-2 .card:hover .one {
+	transform: rotateX(180deg);
+	opacity: 0;
+}
+
+.cards-2 .card:hover .two {
+	transform: rotateY(-180deg);
+	opacity: 0;
 }
