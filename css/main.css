@@ -373,6 +373,65 @@ body {
 	animation: move 3s forwards;
 }
 
+.cards-3 h1 {
+	position: absolute;
+	top: 60px;
+	left: 60px;
+	text-transform: uppercase;
+	font-size: 0;
+}
+
+.cards-3 h1 span {
+	display: inline-block;
+	font-size: 50px;
+	color: #fff;
+	text-shadow: 2px 2px 5px #000;
+	animation: rotate-heading 2s 1s linear forwards;
+	opacity: 0;
+}
+
+.cards-3 h1 span:nth-child(2) {
+	animation-delay: 1s;
+}
+
+.cards-3 h1 span:nth-child(3) {
+	animation-delay: 1.2s;
+}
+
+.cards-3 h1 span:nth-child(4) {
+	animation-delay: 1.4s;
+}
+
+.cards-3 h1 span:nth-child(5) {
+	animation-delay: 1.6s;
+}
+
+.cards-3 h1 span:nth-child(6) {
+	animation-delay: 1.8s;
+}
+
+.cards-3 h1 span:nth-child(7) {
+	animation-delay: 2s;
+}
+
+.cards-3 h1 span:nth-child(8) {
+	animation-delay: 2.2s;
+}
+
+@keyframes rotate-heading {
+	from {
+		transform: rotateY(90deg);
+		opacity: 0;
+		filter: blur(8px);
+	}
+
+	to {
+		transform: rotateY(0);
+		filter: blur(0);
+		opacity: 1;
+	}
+}
+
 @keyframes fade {
 	from {
 		opacity: 0;
