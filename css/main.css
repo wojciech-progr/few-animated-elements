@@ -354,6 +354,7 @@ body {
 	height: 400px;
 	border-radius: 15px;
 	overflow: hidden;
+	animation: fade 3s;
 }
 
 .cards-3 .bg-img {
@@ -362,6 +363,39 @@ body {
 	background-image: url('../img/forest-background.jpg');
 	background-size: cover;
 	background-position: center;
+}
+
+.cards-3 .girl {
+	position: absolute;
+	right: 0;
+	bottom: -400px;
+	width: 500px;
+	animation: move 3s forwards;
+}
+
+@keyframes fade {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes move {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 1;
+		bottom: 0;
+	}
+
+	100% {
+		bottom: 0;
+	}
 }
 
 @keyframes up {
