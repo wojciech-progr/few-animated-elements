@@ -439,6 +439,34 @@ body {
 	animation: slide-text 1s 3s forwards;
 }
 
+.buttons {
+	margin-bottom: 100px;
+	font-size: 0px;
+}
+
+.buttons button {
+	position: relative;
+	margin: 20px;
+	padding: 30px 50px;
+	background: none;
+	border: 1px solid #fff;
+	border-radius: 8px;
+	color: #fff;
+	font-size: 28px;
+	text-transform: uppercase;
+	cursor: pointer;
+	overflow: hidden;
+}
+
+button::before,
+button::after {
+	display: block;
+	position: absolute;
+	content: '';
+	transition: 0.5s;
+	z-index: -1;
+}
+
 @keyframes slide-text {
 	from {
 		top: -60px;
