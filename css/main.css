@@ -512,12 +512,37 @@ body {
 	transition: 0.5s 0.1s;
 }
 
-.slide:hover .span1 {
+.buttons .slide:hover .span1 {
 	left: 150%;
 }
 
-.slide:hover .span2 {
+.buttons .slide:hover .span2 {
 	left: 50%;
+}
+
+.buttons .slice::before,
+.buttons .slice::after {
+	width: 100%;
+	height: 100%;
+	background-color: rgb(24, 147, 230);
+}
+
+.buttons .slice::before {
+	top: -50%;
+	left: -100%;
+}
+
+.buttons .slice::after {
+	bottom: -50%;
+	right: -100%;
+}
+
+.buttons .slice:hover::before {
+	left: 0;
+}
+
+.buttons .slice:hover::after {
+	right: 0;
 }
 
 @keyframes slide-text {
