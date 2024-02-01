@@ -595,6 +595,19 @@ body {
 	border: 1px solid transparent;
 }
 
+.buttons .glass::before {
+	top: -30px;
+	left: -130px;
+	height: 160%;
+	width: 100px;
+	background-image: linear-gradient(-90deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+	transform: rotate(20deg);
+}
+
+.buttons .glass:hover::before {
+	left: 130%;
+}
+
 @keyframes slide-text {
 	from {
 		top: -60px;
