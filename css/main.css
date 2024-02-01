@@ -554,6 +554,47 @@ body {
 	box-shadow: 2px 3px 0 0 rgba(255, 255, 255, 0.8), inset 11px 6px 10px rgba(0, 0, 0.2);
 }
 
+.buttons .border {
+	border-radius: 0;
+	overflow: visible;
+	transition: 0.8s;
+}
+
+.buttons .border::after,
+.buttons .border::before {
+	width: 100%;
+	height: 100%;
+}
+
+.buttons .border::after {
+	bottom: 0;
+	right: 0;
+}
+
+.buttons .border::before {
+	top: 0;
+	left: 0;
+}
+
+.buttons .border:hover::after {
+	bottom: -10px;
+	right: -10px;
+	border-bottom: 5px solid #13bb4b;
+	border-right: 5px solid #13bb4b;
+}
+
+.buttons .border:hover::before {
+	top: -10px;
+	left: -10px;
+	border-top: 5px solid #13bb4b;
+	border-left: 5px solid #13bb4b;
+}
+
+.buttons .border:hover {
+	color: #13bb4b;
+	border: 1px solid transparent;
+}
+
 @keyframes slide-text {
 	from {
 		top: -60px;
