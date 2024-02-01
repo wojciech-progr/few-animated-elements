@@ -458,13 +458,66 @@ body {
 	overflow: hidden;
 }
 
-button::before,
-button::after {
+.buttons button::before,
+.buttons button::after {
 	display: block;
 	position: absolute;
 	content: '';
 	transition: 0.5s;
 	z-index: -1;
+}
+
+.buttons .slide {
+	width: 180px;
+	height: 95px;
+}
+
+.buttons .slide::after {
+	height: 100%;
+	top: 0;
+	left: -10px;
+	border-left: 2px solid #fff;
+}
+
+.buttons .slide::before {
+	width: 100%;
+	top: -10px;
+	left: 0;
+	border-top: 2px solid #fff;
+	transition-delay: 0.1s;
+}
+
+.buttons .slide:hover::after {
+	left: 300px;
+}
+
+.buttons .slide:hover::before {
+	top: 100px;
+}
+
+.buttons .span1,
+.buttons .span2 {
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.buttons .span1 {
+	left: 50%;
+	transition: 0.5s;
+}
+
+.buttons .span2 {
+	left: -50%;
+	transition: 0.5s 0.1s;
+}
+
+.slide:hover .span1 {
+	left: 150%;
+}
+
+.slide:hover .span2 {
+	left: 50%;
 }
 
 @keyframes slide-text {
