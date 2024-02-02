@@ -608,6 +608,51 @@ body {
 	left: 130%;
 }
 
+.navigation {
+	height: 1000px;
+}
+
+.navigation nav {
+	margin-top: 100px;
+	background-color: #292929;
+	text-align: center;
+	color: white;
+}
+
+.navigation ul {
+	list-style: none;
+	font-size: 24px;
+}
+
+.navigation .menu-item {
+	display: inline-block;
+	height: 100px;
+	width: 300px;
+	line-height: 100px;
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+
+.navigation .menu-item:hover {
+	background-color: #363636;
+}
+
+.dropdown {
+	position: absolute;
+	width: 300px;
+}
+
+.dropdown li {
+	display: none;
+	background-color: #50515a;
+	opacity: 0;
+	transition: color 0.3s;
+}
+
+.dropdown li:hover {
+	color: royalblue;
+}
+
 @keyframes slide-text {
 	from {
 		top: -60px;
