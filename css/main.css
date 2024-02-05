@@ -642,15 +642,52 @@ body {
 	width: 300px;
 }
 
-.dropdown li {
+.navigation .dropdown li {
 	display: none;
 	background-color: #50515a;
 	opacity: 0;
 	transition: color 0.3s;
 }
 
-.dropdown li:hover {
+.navigation .dropdown li:hover {
 	color: royalblue;
+}
+
+.navigation .menu-item:hover .dropdown li {
+	display: block;
+	animation: menu1 0.5s forwards;
+}
+
+.navigation .menu-item:hover .dropdown li:nth-child(2) {
+	animation-delay: 0.2s;
+}
+
+.navigation .menu-item:hover .dropdown li:nth-child(3) {
+	animation-delay: 0.4s;
+}
+
+.navigation .menu-item:hover .dropdown li:nth-child(4) {
+	animation-delay: 0.6s;
+}
+
+.navigation .menu-item:hover .dropdown li:nth-child(5) {
+	animation-delay: 0.8s;
+}
+
+.navigation .menu-item:hover .dropdown li:nth-child(6) {
+	animation-delay: 1s;
+}
+
+@keyframes menu1 {
+	from {
+		opacity: 0;
+		transform: rotate(36deg);
+	}
+
+	to {
+		opacity: 1;
+		transform: rotate(0);
+	}
 }
 
 @keyframes slide-text {
